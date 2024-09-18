@@ -1,0 +1,56 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.gradient-bg {
+  background: linear-gradient(120deg, #e74c3c, #3498db);
+}
+
+.card {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* slide-in class'tan opacity ve transform kaldırıldı */
+.highlight {
+  background-color: #3498db;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+.rounded-full {
+  max-width: 200px;
+  max-height: 200px;
+}
+/* Slider için yeni stiller */
+#slider-container {
+  display: flex;
+  justify-content: space-around; /* This creates space around each image */
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+#slider-container img {
+  height: 500px;
+  object-fit: cover;
+  width: auto;
+}
+
+#slider-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}

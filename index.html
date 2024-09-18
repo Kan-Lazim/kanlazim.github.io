@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta
+      name="keywords"
+      content="Kan Bağışı, kan bağış uygulaması, kan bağışlama, kan ihtiyacı uygulaması, Vahan Dağ, Hasan Taha Künkül, kan bul"
+    />
+    <title>Kan Lazım - Hayat Kurtaran Sosyal Gönüllülük Projesi</title>
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <style></style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <header class="gradient-bg text-white py-6 fixed w-full z-10">
+      <nav class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-2xl font-bold">Kan Lazım</h1>
+        <!-- Hamburger Menu Button -->
+        <button
+          id="menu-btn"
+          class="block md:hidden text-white focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <!-- Menu Items -->
+        <ul
+          id="menu"
+          class="hidden md:flex flex-col md:flex-row md:space-x-4 items-center mt-4 md:mt-0"
+        >
+          <li class="mb-4 md:mb-0">
+            <a href="#about" class="hover:text-gray-300 transition duration-300"
+              >Hakkında</a
+            >
+          </li>
+          <li class="mb-4 md:mb-0">
+            <a
+              href="#features"
+              class="hover:text-gray-300 transition duration-300"
+              >Özellikler</a
+            >
+          </li>
+          <li class="mb-4 md:mb-0">
+            <a href="#team" class="hover:text-gray-300 transition duration-300"
+              >Katkıda Bulunanlar</a
+            >
+          </li>
+          <li>
+            <a
+              href="./assets/kan-lazim.apk"
+              download="kan-lazim.apk"
+              class="bg-white text-red-500 px-4 py-2 rounded-full hover:bg-gray-200 transition duration-300"
+              >İndir</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        id="hero"
+        class="h-screen flex items-center justify-center gradient-bg text-white"
+      >
+        <div class="text-center fade-in">
+          <h2 class="text-5xl font-bold mb-4">
+            Hayat Kurtarmak Şimdi Daha Kolay
+          </h2>
+          <p class="text-xl mb-8">
+            Kan Lazım uygulamasıyla ihtiyaç sahiplerine
+            <span class="highlight">hızlıca</span> ulaşın
+          </p>
+          <a
+            href="./assets/kan-lazim.apk"
+            download="kan-lazim.apk"
+            class="bg-white text-red-500 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition duration-300"
+            >Hemen İndir</a
+          >
+        </div>
+      </section>
+
+      <section id="about" class="py-20 px-4">
+        <div class="container mx-auto">
+          <h2 class="text-4xl font-bold text-center mb-12">Proje Hakkında</h2>
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="slide-in">
+              <p class="text-lg mb-6">
+                Kan Lazım, acil kan ihtiyacı olan kişileri potansiyel kan
+                bağışçılarıyla buluşturan tamamen <b>gönüllülük odaklı</b> bir
+                mobil uygulamadır. Amacımız, kan bağışı sürecini kolaylaştırarak
+                daha fazla hayat kurtarmaktır.
+              </p>
+              <p class="text-lg">
+                Uygulamamız sayesinde, ihtiyaç sahipleri hızlıca kan talebinde
+                bulunabilir, gönüllü bağışçılar ise bu talepleri anında
+                görüntüleyebilir. Böylece, kritik zamanlarda hayat kurtarıcı
+                bağlantılar kurulabilir.
+              </p>
+            </div>
+            <div class="slide-in">
+              <img
+                src="./assets/apps.png"
+                alt="Kan Lazım Uygulaması"
+                class="rounded-lg shadow-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="py-20 px-4 bg-gray-100">
+        <div class="container mx-auto">
+          <h2 class="text-4xl font-bold text-center mb-12">Özellikler</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="card p-6 rounded-lg shadow-lg slide-in">
+              <h3 class="text-2xl font-semibold mb-4">Hızlı Talep Oluşturma</h3>
+              <p>
+                Acil kan ihtiyacınızı birkaç tıklama ile oluşturun ve potansiyel
+                bağışçılara ulaşın.
+              </p>
+            </div>
+            <div class="card p-6 rounded-lg shadow-lg slide-in">
+              <h3 class="text-2xl font-semibold mb-4">Paylaşım Özelliği</h3>
+              <p>
+                Oluşturulan kan taleplerini diğer sosyal medya platformlarında
+                hızlıca paylaşın.
+              </p>
+            </div>
+            <div class="card p-6 rounded-lg shadow-lg slide-in">
+              <h3 class="text-2xl font-semibold mb-4">
+                Konum Bazlı Eşleştirme
+              </h3>
+              <p>
+                Mevcut konumunuzdaki ihtiyaç sahiplerine ulaşın veya
+                ihtiyacınızı ulaştırın.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="slider" class="py-20 px-4 bg-gray-100">
+        <div class="container mx-auto">
+          <h2 class="text-4xl font-bold text-center mb-12">
+            Ekran Görüntüleri
+          </h2>
+          <div class="overflow-hidden relative">
+            <div
+              class="flex space-x-4 transition-transform duration-300"
+              id="slider-container"
+            >
+              <img
+                src="./assets/app-screenshots/ss-1.png"
+                alt="Screenshot 1"
+                class="w-64 h-64 object-cover rounded-lg shadow-lg"
+              />
+              <img
+                src="./assets/app-screenshots/ss-2.png"
+                alt="Screenshot 2"
+                class="w-64 h-64 object-cover rounded-lg shadow-lg"
+              />
+              <img
+                src="./assets/app-screenshots/ss-3.png"
+                alt="Screenshot 3"
+                class="w-64 h-64 object-cover rounded-lg shadow-lg"
+              />
+              <img
+                src="./assets/app-screenshots/ss-4.png"
+                alt="Screenshot 3"
+                class="w-64 h-64 object-cover rounded-lg shadow-lg"
+              />
+              <img
+                src="./assets/app-screenshots/ss-5.png"
+                alt="Screenshot 3"
+                class="w-64 h-64 object-cover rounded-lg shadow-lg"
+              />
+              <img
+                src="./assets/app-screenshots/ss-6.png"
+                alt="Screenshot 3"
+                class="w-64 h-64 object-cover rounded-lg shadow-lg"
+              />
+              <!-- Add more images as needed -->
+            </div>
+            <!-- Navigation Buttons -->
+            <button
+              id="prevBtn"
+              class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white px-4 py-2 shadow-md rounded-full"
+            >
+              &#10094;
+            </button>
+            <button
+              id="nextBtn"
+              class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white px-4 py-2 shadow-md rounded-full"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="py-20 px-4 bg-gray-100">
+        <div class="container mx-auto">
+          <h2 class="text-4xl font-bold text-center mb-12">
+            Katkıda Bulunanlar
+          </h2>
+          <div class="grid md:grid-cols-2 gap-12">
+            <div class="text-center slide-in">
+              <img
+                src="./assets/avatar-1.png"
+                alt="Vahan Dağ"
+                class="rounded-full mx-auto mb-4"
+              />
+              <h3 class="text-2xl font-semibold mb-2">Vahan Dağ</h3>
+              <p class="mb-4">Mobil Uygulama Geliştiricisi</p>
+              <a
+                href="https://www.linkedin.com/in/vahandag"
+                target="_blank"
+                class="text-blue-500 hover:text-blue-700 transition duration-300"
+                >LinkedIn</a
+              >
+            </div>
+            <div class="text-center slide-in">
+              <img
+                src="./assets/avatar-2.png"
+                alt="Hasan Taha Künkül"
+                class="rounded-full mx-auto mb-4"
+              />
+              <h3 class="text-2xl font-semibold mb-2">Hasan Taha Künkül</h3>
+              <p class="mb-4">Mobil Uygulama Geliştiricisi</p>
+              <a
+                href="https://www.linkedin.com/in/hasan-taha-künkül-9b71b4201/"
+                target="_blank"
+                class="text-blue-500 hover:text-blue-700 transition duration-300"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="py-20 px-4 gradient-bg text-white">
+        <div class="container mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-8">Hemen İndirin, Hayat Kurtarın</h2>
+          <a
+            href="./assets/kan-lazim.apk"
+            download="kan-lazim.apk"
+            class="bg-white text-red-500 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition duration-300"
+            >APK İndir</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto text-center">
+        <p>
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Kan Lazım. Designed By
+          <a
+            href="https://www.linkedin.com/in/vahan-dag"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Vahan Dağ</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
